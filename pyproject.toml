@@ -1,0 +1,23 @@
+[project]
+name = "ovarian-tvus-pipeline"
+version = "2.0.0"
+description = "Three-stage computer-vision pipeline for adnexal masses on transvaginal ultrasound"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+[tool.setuptools]
+packages = ["ovarian", "analysis"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+# The Stage I trainer is published exactly as it was run and is deliberately not reformatted.
+exclude = ["stage1_clinical_cam_loss"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

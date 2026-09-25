@@ -1,0 +1,16 @@
+# Direct dependencies imported by the files in this directory, at the versions used
+# in the tested Python 3.9.23 ML environment. ultralytics installs its own
+# dependencies (matplotlib, scipy, PyYAML, psutil, and others).
+# Install torch/torchvision builds matching your GPU/driver first.
+# This is not a fully locked environment or a verified clean-install recipe.
+torch==2.8.0
+torchvision==0.23.0
+ultralytics==8.4.14
+numpy==2.0.2
+pandas==2.3.3
+scipy==1.13.1
+scikit-learn==1.6.1
+opencv-python==4.11.0.86
+Pillow==11.3.0
+matplotlib==3.9.4
+tqdm==4.67.1

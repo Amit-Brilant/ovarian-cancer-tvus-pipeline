@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+data/*
+!data/README.md
+weights/
+results/
+private/
+*.pt
+*.pth
+*.pkl
+.ruff_cache/
+.pytest_cache/
+*.egg-info/

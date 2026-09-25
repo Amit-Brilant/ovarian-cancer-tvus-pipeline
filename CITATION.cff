@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Three-stage computer-vision pipeline for ovarian carcinoma diagnosis from transvaginal ultrasound in postmenopausal women"
+abstract: >
+  Source code for a three-stage computer-vision pipeline that combines
+  EfficientNet-B7 normal-versus-pathological triage, YOLOv8m cyst
+  localisation, and benign-versus-malignant classification fusing CNN
+  embeddings with eleven SAM-derived morphological features. Trained and
+  evaluated on 1,082 transvaginal ultrasound images from 260 postmenopausal
+  women at Meir Medical Center.
+authors:
+  - family-names: Aviv
+    given-names: Omer
+    affiliation: "Ben-Gurion University of the Negev"
+  - family-names: Brilant
+    given-names: Amit
+    affiliation: "Ben-Gurion University of the Negev"
+  - family-names: Hoffer
+    given-names: Oshrit
+    affiliation: "Afeka Tel-Aviv Academic College of Engineering"
+  - family-names: Vetcher
+    given-names: Omer
+    affiliation: "Afeka Tel-Aviv Academic College of Engineering"
+  - family-names: Yitzhak
+    given-names: Shai
+    affiliation: "Afeka Tel-Aviv Academic College of Engineering"
+  - family-names: Ghanayem
+    given-names: Nagham
+    affiliation: "Meir Medical Center"
+  - family-names: Markovitch
+    given-names: Ofer
+    affiliation: "Meir Medical Center"
+  - family-names: Hadar
+    given-names: Ofer
+    affiliation: "Ben-Gurion University of the Negev"
+keywords:
+  - ovarian cancer
+  - transvaginal ultrasound
+  - deep learning
+  - explainable AI
+  - multimodal fusion
+  - Segment Anything Model
+license: MIT
+version: "2.0.0"
+date-released: "2026-09-19"
+repository-code: "https://github.com/Amit-Brilant/ovarian-cancer-tvus-pipeline"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20383744"
+    description: "Companion Zenodo record: dataset, annotations, derived features, and trained model weights."

@@ -1,0 +1,27 @@
+# Conda equivalent of requirements.txt. Both describe the same environment; use either one.
+# Tested with Python 3.14 on macOS (CPU). For a CUDA machine, install the pytorch build that matches
+# your driver from the pytorch channel instead of the pip wheel.
+name: ovarian-tvus
+channels:
+  - conda-forge
+dependencies:
+  - python=3.14
+  - pip
+  - numpy=2.4.4
+  - pandas=3.0.2
+  - scipy=1.17.1
+  - scikit-learn=1.8.0
+  - scikit-image=0.26.0
+  - matplotlib=3.10.9
+  - pillow=12.2.0
+  - openpyxl=3.1.5
+  - tqdm=4.70.1
+  - pip:
+      - torch==2.11.0
+      - torchvision==0.26.0
+      - ultralytics==8.3.253
+      - segment-anything==1.0
+      - xgboost==2.1.4
+      - shap==0.52.0
+      - optuna==5.0.0
+      - opencv-python==4.13.0.92
